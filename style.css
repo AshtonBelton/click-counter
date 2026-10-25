@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1e1e2f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game {
+  text-align: center;
+}
+
+#score {
+  font-size: 5rem;
+  margin: 20px 0;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  margin: 0 6px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #4f8cff;
+  color: white;
+  transition: transform 0.1s;
+}
+
+button:hover {
+  background: #3a74e0;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#reset-btn {
+  background: #666;
+}
+
+#upgrade-btn {
+  background: #f5a623;
+}
+
+/* Applied to the Click button once it's upgraded */
+#click-btn.upgraded {
+  background: #2ecc71;
+}
+
+#click-btn.upgraded:hover {
+  background: #27ae60;
+}
+
+#upgrade-btn:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+#auto-btn {
+  background: #9b59b6;
+}
+
+#auto-btn:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+/* Feedback text, e.g. "Not enough points!" */
+#message {
+  height: 1.5rem; /* keeps the layout from jumping when text appears */
+  color: #ff6b6b;
+}
